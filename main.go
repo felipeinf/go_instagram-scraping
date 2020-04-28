@@ -3,6 +3,7 @@ package main
 import (
 	"os"
 
+	scrap "./scraping"
 	"github.com/ahmdrz/goinsta"
 )
 
@@ -23,4 +24,5 @@ func main() {
 		panic(err)
 	}
 
+	scrap.PrintFollowers(insta)
 }
